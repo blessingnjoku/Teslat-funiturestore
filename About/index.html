@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- ======Css Link==== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" href="/Homepage/css/style.css"/>
     <!--======ends====  -->
 
     <title>about</title>
@@ -29,56 +29,85 @@
 </head>
 <body>
 
-     <!-- =======sticky header==== -->
-     <section class="stickynav">
-        <div class="heade-note container-fluid">
-          <div class="" style="flex: 1;" >
-          <span  class="wel">Welcome to our online shop</span>
+    <!-- =======Top header==== -->
+    <section class="Top-nav">
+        <div class="TopNav-Content">
+          <div class=""  >
+          <span  class="welcome-Note">Welcome to our online shop</span>
           </div>
-          <div class="tbtn" >
-            <span>English (USD)
+          <div class="text-btn" >
+         
+            <span  class="currency-select">English (USD)
               <select name="Currency" id="Currency"></select>
             </span>
-            <span class="rectangle-Shape me-4"></span>
+            <a class="rectangle-Shape  "></a>
+           
             <button
-              class="buttn1 btn-btn me-4"
+              class="buttn1  me-4"  
             
             >
               Log in
             </button>
-            <button class="buttn2 btn-btn">Sign up</button>
+            <button class="buttn2">Sign up</button>
           </div>
         </div>
       </section>
       <!-- ======ENDS==== -->
-  
       <!-- ====navbar=== -->
-      <div class="nav-section navbar-inverse " data-spy="affix" data-offset-top="100">
+    <div class="nav-section navbar-inverse " data-spy="affix" data-offset-top="100">
+     
         <div class="navbar ">
-            <div>
-            <a href="#" class="logo">Teslat</a>
+          <span class="navToggle" id="navToggle">
+            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L20 1" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 7.70508L20 7.70508" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 14.4121L20 14.4121" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </span>
+            <div class="logo">
+            <img src="assets/images/Logo.png" alt="logo"/>
             </div>
           
-          
-          <div class="navMenu me-4" >
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Shop</a>
-          <a href="#">Blog</a>
-          <a href="#">Conact us</a>
+        
+          <div class="navMenu" >
+          <a href="/Homepage/"class="navMenu-a ">Home</a>
+          <a href="/About/" class="navMenu-a ">About</a>
+          <a href="/ShopPage/" class="navMenu-a">Shop</a>
+          <a href="/Blogpage/" class="navMenu-a">Blog</a>
+          <a href="/contact us/">Conact us</a>
           </div>
-       
-          <form action="" class="input-Form " style="margin-right: 30px;">
+      
+          
+          <form action="" class="input-Form" id="input-Form">
             <input type="text" placeholder="Search here" class="" />
-            <button class="input-button"><i class="fas fa-search "></i></button>
+            <button class="input-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.9999 19.0004L14.6499 14.6504" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </button>
           </form>
-          <div class="navToggle" id="navToggle">
-            <i class="fas fa-bars"></i>
-           </div>
+          
           
          
+        </div>
+        <div class="MobileView-icons">
+          <svg width="24" height="23" class="cart" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+  
+        <svg width="20" class="searchToggle" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18.9999 19.0004L14.6499 14.6504" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        <!-- <i class="fas fa-times" id="close"></i> -->
           
         </div>
+      
+      
       </div>
       <!-- ===End== -->
     <!-- about Hero== -->
@@ -95,8 +124,6 @@
                 <img src="assets/images/h-p1.png" alt="funiture image"/>
             </div>
             </div>
-
-        </div>
     </section>
     <!-- ends== -->
 
@@ -118,23 +145,22 @@
                     </svg>
                     Who We Are</p>
                    <h3>We  create the product you tell us you wish existed.</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus volutpat urna orci laoreet vel ligula. Tortor, venenatis, nibh fringilla convallis egestas porttitor lectus. Vitae lectus eu tortor pharetra orci.</p>
-                  <button class="button  product-btn" style="text-align: center;"><a href="#" class="me-2">Read More</a><i class="" ><svg width="20" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p>Lorem ipsum dolor sit amet, consecteidipiscing elit. Faucibus volutpat urna orci laoreet vel ligula. Tortor, venenatis, nibh fringilla hdgegij djuhefq loram regum si teti.</p>
+                  <button class="button  product-btn" style="text-align: center;"><a href="#" class="me-4">Read More</a><i class="" ><svg width="30" height="20" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8L25 8" stroke="#ECF2F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M18 1L25 8L18 15" stroke="#ECF2F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </i></button> 
             </div>
 
-
         </div>
     </section>
     <!-- ends -->
 
     <!-- offer cash delvery== -->
-    <section class="offers" >
-        <div class="container row to-flex" >
-            <div class="col-md-4 d-flex">
+    <section class="offers-section" >
+        <div class="container row" >
+            <div class="col-md-4 offers">
                 <div class="square-Box pt-4">
                     <!-- svg -->
                     <svg width="30" height="20" viewBox="0 0 47 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,12 +169,13 @@
                     <path d="M46.7823 17.772L41.7553 6.04242C41.6263 5.74094 41.4116 5.48398 41.1378 5.30346C40.8641 5.12293 40.5433 5.02679 40.2154 5.02697H35.1884V1.67566C35.1884 1.23125 35.0119 0.805036 34.6976 0.490789C34.3834 0.176542 33.9572 0 33.5128 0H6.70223V3.35132H31.8371V24.3909C31.0735 24.8342 30.4053 25.4244 29.871 26.1273C29.3366 26.8302 28.9467 27.6319 28.7237 28.4862H18.1939C17.786 26.9066 16.8161 25.53 15.4659 24.6144C14.1157 23.6988 12.4779 23.3071 10.8595 23.5126C9.24116 23.7182 7.75331 24.5069 6.67488 25.731C5.59644 26.9551 5.00146 28.5305 5.00146 30.1618C5.00146 31.7932 5.59644 33.3686 6.67488 34.5927C7.75331 35.8167 9.24116 36.6055 10.8595 36.811C12.4779 37.0166 14.1157 36.6249 15.4659 35.7093C16.8161 34.7937 17.786 33.4171 18.1939 31.8375H28.7237C29.0882 33.2756 29.9219 34.5511 31.0927 35.4622C32.2636 36.3733 33.7048 36.868 35.1884 36.868C36.672 36.868 38.1132 36.3733 39.2841 35.4622C40.4549 34.5511 41.2886 33.2756 41.6531 31.8375H45.2424C45.6868 31.8375 46.113 31.661 46.4272 31.3467C46.7415 31.0325 46.918 30.6062 46.918 30.1618V18.4322C46.9181 18.2052 46.8719 17.9806 46.7823 17.772ZM11.7292 33.5132C11.0664 33.5132 10.4184 33.3166 9.86731 32.9484C9.31619 32.5801 8.88664 32.0567 8.63299 31.4443C8.37934 30.832 8.31297 30.1581 8.44228 29.508C8.57159 28.8579 8.89077 28.2608 9.35946 27.7921C9.82815 27.3234 10.4253 27.0042 11.0754 26.8749C11.7255 26.7456 12.3993 26.812 13.0117 27.0656C13.6241 27.3193 14.1475 27.7488 14.5157 28.2999C14.884 28.8511 15.0805 29.499 15.0805 30.1618C15.0796 31.0504 14.7263 31.9023 14.098 32.5306C13.4697 33.1589 12.6178 33.5123 11.7292 33.5132ZM35.1884 8.37829H39.1095L42.7021 16.7566H35.1884V8.37829ZM35.1884 33.5132C34.5256 33.5132 33.8776 33.3166 33.3265 32.9484C32.7754 32.5801 32.3459 32.0567 32.0922 31.4443C31.8385 30.832 31.7722 30.1581 31.9015 29.508C32.0308 28.8579 32.35 28.2608 32.8187 27.7921C33.2874 27.3234 33.8845 27.0042 34.5346 26.8749C35.1847 26.7456 35.8585 26.812 36.4709 27.0656C37.0833 27.3193 37.6067 27.7488 37.9749 28.2999C38.3432 28.8511 38.5397 29.499 38.5397 30.1618C38.5388 31.0504 38.1855 31.9023 37.5572 32.5306C36.9289 33.1589 36.077 33.5123 35.1884 33.5132ZM43.5667 28.4862H41.6531C41.284 27.0509 40.449 25.7786 39.2791 24.8689C38.1092 23.9591 36.6704 23.4633 35.1884 23.4592V20.1079H43.5667V28.4862Z" fill="black"/>
                     </svg>
                     </div>
-                <div class="O-textbox" >
+                <div class="O-textbox" > 
                 <h5>Full Fast Delivery</h5>
                 <p>Within 48 hours</p>
                 </div>
             </div>
-            <div class="col-md-4  d-flex">
+            <hr/>
+            <div class="col-md-4  offers">
                 <div class="square-Box "><svg width="30" height="30" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="56" height="56" fill="url(#pattern0)"/>
                     <defs>
@@ -159,12 +186,14 @@
                     </defs>
                     </svg>
                     </div>
+                 
                 <div class="O-textbox" >
                 <h5>Cash On Delivery</h5>
                 <p>All over the country</p>
                 </div>
             </div>
-            <div class="col-md-4  d-flex">
+            <hr/>
+            <div class="col-md-4  offers">
                 <div class="square-Box" >
                     <img src="assets/images/summersale.png" style="width:50%;height: 65%; "/>
                     </div>
@@ -180,7 +209,7 @@
     
     <!-- ends -->
     <!-- ===our service -->
-    <section>
+    <section >
         <div class="container">
             <div class="service-header">
                 <span><svg width="35" height="2" viewBox="0 0 35 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -304,17 +333,19 @@
 
     <!-- ====client review== -->
     <div class="banner-img">
+       <div class="big-image">
         <img src="assets/images/R-p1.png" alt="banner photo"/>
+       </div>
         <div class="review-box">
             <p>Lorem ipsum dolor sit amet,onsectetur adipiscing elit. Nulla commodo elementum malesuada mauris aliquam egestas, hgtenulla agtgehye.</p>
-            <div class="d-flex p-4">
+            <div class="d-flex client-Ratings ">
             <div class="cicle me-4">
 
                 <img src="assets/images/R-P2.png"/>
             </div>
             <div>
-           <h3>Donald Kitt</h3>
-           <div class="stars" >
+           <h3 class="p-2">Donald Kitt</h3>
+           <div class="stars px-2" >
             <span class="star-icon"><i class="fas fa-star"></i></span>
             <span class="star-icon"><i class="fas fa-star"></i></span>
             <span class="star-icon"><i class="fas fa-star"></i></span>

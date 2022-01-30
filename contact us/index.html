@@ -30,57 +30,88 @@
   <body>
 
 
-    <!-- =======sticky header==== -->
-    <section class="stickynav">
-      <div class="heade-note container-fluid">
-        <div class="" style="flex: 1;" >
-        <span  class="wel">Welcome to our online shop</span>
+   
+    <!-- =======Top header==== -->
+    <section class="Top-nav">
+      <div class="TopNav-Content">
+        <div class=""  >
+        <span  class="welcome-Note">Welcome to our online shop</span>
         </div>
-        <div class="tbtn" >
-          <span>English (USD)
+        <div class="text-btn" >
+       
+          <span  class="currency-select">English (USD)
             <select name="Currency" id="Currency"></select>
           </span>
-          <span class="rectangle-Shape me-4"></span>
+          <a class="rectangle-Shape  "></a>
+         
           <button
-            class="buttn1 btn-btn me-4"
+            class="buttn1  me-4"  
           
           >
             Log in
           </button>
-          <button class="buttn2 btn-btn">Sign up</button>
+          <button class="buttn2">Sign up</button>
         </div>
       </div>
     </section>
     <!-- ======ENDS==== -->
-
     <!-- ====navbar=== -->
-    <div class="nav-section navbar-inverse " data-spy="affix" data-offset-top="100">
+  <div class="nav-section navbar-inverse " data-spy="affix" data-offset-top="100">
+   
       <div class="navbar ">
-          <div>
-          <a href="#" class="logo">Teslat</a>
+        <span class="navToggle" id="navToggle">
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L20 1" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 7.70508L20 7.70508" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 14.4121L20 14.4121" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </span>
+          <div class="logo">
+          <img src="images/Logo.png" alt="logo"/>
           </div>
         
-        
-        <div class="navMenu me-4" >
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Shop</a>
-        <a href="#">Blog</a>
-        <a href="#">Conact us</a>
+      
+        <div class="navMenu" >
+        <a href="/Homepage/"class="navMenu-a ">Home</a>
+        <a href="/About/" class="navMenu-a ">About</a>
+        <a href="/ShopPage/" class="navMenu-a">Shop</a>
+        <a href="/Blogpage/" class="navMenu-a">Blog</a>
+        <a href="/contact us/">Conact us</a>
         </div>
-     
-        <form action="" class="input-Form " style="margin-right: 30px;">
+    
+        
+        <form action="" class="input-Form" id="input-Form">
           <input type="text" placeholder="Search here" class="" />
-          <button class="input-button"><i class="fas fa-search "></i></button>
+          <button class="input-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.9999 19.0004L14.6499 14.6504" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
         </form>
-        <div class="navToggle" id="navToggle">
-          <i class="fas fa-bars"></i>
-         </div>
+        
         
        
+      </div>
+      <div class="MobileView-icons">
+        <svg width="24" height="23" class="cart" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+
+      <svg width="20" class="searchToggle" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.9999 19.0004L14.6499 14.6504" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      <!-- <i class="fas fa-times" id="close"></i> -->
         
       </div>
+    
+    
     </div>
+   
     <!-- ===End== -->
   <!-- contactHero== -->
   <section class="about-hero" >
