@@ -419,21 +419,32 @@ select {
 
 /* ===reviews */
 .banner-img {
+  width: 1440px;
+ height: 628px;
+ background-color: #ccc;
   position: relative;
+  
+}
+
+.big-image{
+  height: 100%;
 }
 .review-box {
-  width: 380px;
-  height: 200px;
-  padding: 25px 10px;
+  width: 535px;
+  height: 275px;
+  border-radius: 5px;
+  padding: 25px 20px;
   background-color: #fff;
   position: absolute;
-  bottom: 50%;
-  left: 50%;
-  right: 50%;
+  top: 100px;
+  right: 150px;
+}
+.review-box p{
+  font-size: 18px;
 }
 .cicle {
-  width: 50px;
-  height: 50px;
+  width: 77px;
+  height: 77px;
   border-radius: 50%;
   background-color: gray;
 }
@@ -447,6 +458,9 @@ select {
 
 .star-icon {
   color: #ffd700;
+}
+.client-Ratings {
+  padding-top: 20px;
 }
 /* ends */
 /* footer */
